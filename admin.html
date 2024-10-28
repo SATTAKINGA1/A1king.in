@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Admin Panel</h1>
+    </header>
+
+    <form id="updateForm">
+        <label for="city1">Current City:</label>
+        <select id="city1" name="city1" required>
+            <option value="सदर बाजार">सदर बाजार</option>
+            <option value="ग्वालियर">ग्वालियर</option>
+            <option value="दिल्ली बाजार">दिल्ली बाजार</option>
+            <option value="श्री गणेश">श्री गणेश</option>
+            <option value="फरीदाबाद">फरीदाबाद</option>
+            <option value="कानपुर सिटी">कानपुर सिटी</option>
+            <option value="गाज़ियाबाद">गाज़ियाबाद</option>
+            <option value="अयोध्या">अयोध्या</option>
+            <option value="गली">गली</option>
+            <option value="दिसावर">दिसावर</option>
+        </select>
+
+        <label for="number">Number:</label>
+        <input type="number" id="number" name="number" required>
+
+        <label for="nextCity">Next City:</label>
+        <select id="nextCity" name="nextCity" required>
+            <option value="सदर बाजार">सदर बाजार</option>
+            <option value="ग्वालियर">ग्वालियर</option>
+            <option value="दिल्ली बाजार">दिल्ली बाजार</option>
+            <option value="श्री गणेश">श्री गणेश</option>
+            <option value="फरीदाबाद">फरीदाबाद</option>
+            <option value="कानपुर सिटी">कानपुर सिटी</option>
+            <option value="गाज़ियाबाद">गाज़ियाबाद</option>
+            <option value="अयोध्या">अयोध्या</option>
+            <option value="गली">गली</option>
+            <option value="दिसावर">दिसावर</option>
+        </select>
+
+        <h3>Update City Numbers</h3>
+        <div id="cityNumbers">
+            <!-- Input fields for each city's numbers -->
+            <label for="सदर बाजार_yesterday">सदर बाजार - Yesterday:</label>
+            <input type="number" id="सदर बाजार_yesterday" name="सदर बाजार_yesterday" placeholder="00">
+            <label for="सदर बाजार_today">सदर बाजार - Today:</label>
+            <input type="number" id="सदर बाजार_today" name="सदर बाजार_today" placeholder="00">
+
+            <label for="ग्वालियर_yesterday">ग्वालियर - Yesterday:</label>
+            <input type="number" id="ग्वालियर_yesterday" name="ग्वालियर_yesterday" placeholder="00">
+            <label for="ग्वालियर_today">ग्वालियर - Today:</label>
+            <input type="number" id="ग्वालियर_today" name="ग्वालियर_today" placeholder="00">
+
+            <label for="दिल्ली बाजार_yesterday">दिल्ली बाजार - Yesterday:</label>
+            <input type="number" id="दिल्ली बाजार_yesterday" name="दिल्ली बाजार_yesterday" placeholder="00">
+            <label for="दिल्ली बाजार_today">दिल्ली बाजार - Today:</label>
+            <input type="number" id="दिल्ली बाजार_today" name="दिल्ली बाजार_today" placeholder="00">
+
+            <label for="श्री गणेश_yesterday">श्री गणेश - Yesterday:</label>
+            <input type="number" id="श्री गणेश_yesterday" name="श्री गणेश_yesterday" placeholder="00">
+            <label for="श्री गणेश_today">श्री गणेश - Today:</label>
+            <input type="number" id="श्री गणेश_today" name="श्री गणेश_today" placeholder="00">
+
+            <label for="फरीदाबाद_yesterday">फरीदाबाद - Yesterday:</label>
+            <input type="number" id="फरीदाबाद_yesterday" name="फरीदाबाद_yesterday" placeholder="00">
+            <label for="फरीदाबाद_today">फरीदाबाद - Today:</label>
+            <input type="number" id="फरीदाबाद_today" name="फरीदाबाद_today" placeholder="00">
+
+            <label for="कानपुर सिटी_yesterday">कानपुर सिटी - Yesterday:</label>
+            <input type="number" id="कानपुर सिटी_yesterday" name="कानपुर सिटी_yesterday" placeholder="00">
+            <label for="कानपुर सिटी_today">कानपुर सिटी - Today:</label>
+            <input type="number" id="कानपुर सिटी_today" name="कानपुर सिटी_today" placeholder="00">
+
+            <label for="गाज़ियाबाद_yesterday">गाज़ियाबाद - Yesterday:</label>
+            <input type="number" id="गाज़ियाबाद_yesterday" name="गाज़ियाबाद_yesterday" placeholder="00">
+            <label for="गाज़ियाबाद_today">गाज़ियाबाद - Today:</label>
+            <input type="number" id="गाज़ियाबाद_today" name="गाज़ियाबाद_today" placeholder="00">
+
+            <label for="अयोध्या_yesterday">अयोध्या - Yesterday:</label>
+            <input type="number" id="अयोध्या_yesterday" name="अयोध्या_yesterday" placeholder="00">
+            <label for="अयोध्या_today">अयोध्या - Today:</label>
+            <input type="number" id="अयोध्या_today" name="अयोध्या_today" placeholder="00">
+
+            <label for="गली_yesterday">गली - Yesterday:</label>
+            <input type="number" id="गली_yesterday" name="गली_yesterday" placeholder="00">
+            <label for="गली_today">गली - Today:</label>
+            <input type="number" id="गली_today" name="गली_today" placeholder="00">
+
+            <label for="दिसावर_yesterday">दिसावर - Yesterday:</label>
+            <input type="number" id="दिसावर_yesterday" name="दिसावर_yesterday" placeholder="00">
+            <label for="दिसावर_today">दिसावर - Today:</label>
+            <input type="number" id="दिसावर_today" name="दिसावर_today" placeholder="00">
+        </div>
+
+        <button type="submit">Update</button>
+    </form>
+
+    <script src="admin.js"></script>
+</body>
+
+</html>

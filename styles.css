@@ -1,0 +1,109 @@
+/* Basic reset and font styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #282c34;
+    color: #61dafb;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.info {
+    padding: 1rem;
+    background-color: #ffffff;
+    margin: 1rem auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info p {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+#google-time {
+    margin-top: 1rem;
+}
+
+/* Table styling */
+.overflow-x-auto {
+    overflow-x: auto;
+    margin: 1rem;
+}
+
+table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+    background-color: #a9cc47;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+    padding: 1rem;
+    text-align: left;
+}
+
+thead {
+    background-color: #282c34;
+    color: #000;
+    /* Changed to black */
+}
+
+thead th {
+    border-bottom: 2px solid #1e7086;
+}
+
+tbody tr {
+    transition: background-color 0.3s ease;
+}
+
+tbody tr:hover {
+    background-color: #236dad;
+}
+
+tbody td {
+    border-bottom: 1px solid #3f1b1b;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.info,
+table {
+    animation: fadeIn 1s ease-in;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .info {
+        padding: 0.5rem;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+}
